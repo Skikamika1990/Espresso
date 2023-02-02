@@ -1,12 +1,14 @@
-# Script
-Espresso
-echo "Start..."
-curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
+#! /bin/bash
+
+echo "Script started..."
+echo "Downloading and installing Docker is started..."
+curl -fsSL https://get.docker.com -o get-docker.sh && \
+sh get-docker.sh && \
 rm -rf get-docker.sh
-echo "Ok..."
+echo "Finished..."
 
 echo "Prepering Docker..."
-usermod -a -G docker Skika
+usermod -aG docker $USER
 
 systemctl enable docker
 systemctl start docker
