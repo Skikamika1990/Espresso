@@ -1,12 +1,12 @@
 # Script
 Espresso
-echo "Start"
+echo "Start..."
 curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
 rm -rf get-docker.sh
-echo "Finished..."
+echo "Ok..."
 
 echo "Prepering Docker..."
-usermod -aG docker $USER
+usermod -a -G docker Skika
 
 systemctl enable docker
 systemctl start docker
