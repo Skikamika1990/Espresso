@@ -8,7 +8,7 @@ rm -rf get-docker.sh
 echo "Finished..."
 
 echo "Prepering Docker..."
-usermod -aG docker $USER
+usermod -aG docker $Skika
 
 systemctl enable docker
 systemctl start docker
