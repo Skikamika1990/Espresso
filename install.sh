@@ -7,7 +7,7 @@ sh get-docker.sh && \
 rm -rf get-docker.sh
 echo "Finished..."
 
-apt install --reinstall coreutils
+apt install chmod
 
 echo "Prepering Docker..."
 usermod -aG docker $USER
