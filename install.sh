@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "Script started..."
+echo "Script ..."
 echo "Downloading and installing Docker is started..."
 curl -fsSL https://get.docker.com -o get-docker.sh && \
 sh get-docker.sh && \
@@ -21,4 +21,4 @@ docker compose pull
 docker compose up -d
 echo "Docker started..."
 
-echo "Script finished."
+echo "finished."
